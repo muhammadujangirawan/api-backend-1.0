@@ -10,7 +10,7 @@ class Login extends CI_Controller {
 
 	public function index()
 	{
-		$data['title'] = "Capital Life Syariah";
+		$data['title'] = "Login";
         header('Cache-Control: no-cache');
 		header('Pragma: no-cache');
 		$this->load->view('login',$data);
