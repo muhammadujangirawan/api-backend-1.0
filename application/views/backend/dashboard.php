@@ -40,7 +40,7 @@
           </a>
           <ul class="sidenav-second-level collapse" id="collapseComponents">
             <li>
-              <a href="navbar.html">User Management</a>
+              <a href="<?php echo site_url('setting/user')?>">User Management</a>
             </li>
           </ul>
         </li>
@@ -61,18 +61,7 @@
     </div>
   </nav>
   <div class="content-wrapper">
-    <div class="container-fluid">
-      <!-- Breadcrumbs-->
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="#">Dashboard</a>
-        </li>
-        <li class="breadcrumb-item active">My Dashboard</li>
-      </ol>
-      <div class="row">
-        
-      </div>
-    </div>
+    <?php $this->load->view($content)?>
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->
     <footer class="sticky-footer">

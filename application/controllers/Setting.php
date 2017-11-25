@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Dashboard extends MY_Controller {
+class Setting extends MY_Controller {
 
     var $template = 'backend/dashboard';
 
@@ -11,10 +11,10 @@ class Dashboard extends MY_Controller {
 		// $this->load->model('model_dashboard');
 	}
 
-	public function index()
+	public function user()
 	{
 		$data['title'] = "Dashboard";
-		$data['content'] = "backend/dash";
+		$data['content'] = "backend/user";
 		$this->load->view($this->template,$data);
 	}
 }
