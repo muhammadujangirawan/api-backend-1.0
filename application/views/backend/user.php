@@ -32,12 +32,14 @@
                 </tr>
               </tfoot>
               <tbody>
-                <tr>
-                  <td>ujangirawan</td>
-                  <td>Ujang Irawan</td>
-                  <td>T01</td>
-                  <td>T01-TI</td>
-                </tr>
+                <?php foreach($get as $data):?>
+                  <tr>
+                    <td><?php echo isset($data['username'])?$data['username']:'-';?></td>
+                    <td><?php echo isset($data['fullname'])?$data['fullname']:'-';?></td>
+                    <td><?php echo isset($data['faculty'])?$data['faculty']:'-';?></td>
+                    <td><?php echo isset($data['department'])?$data['department']:'-';?></td>
+                  </tr>
+                <?php endforeach?>              
               </tbody>
             </table>
           </div>
